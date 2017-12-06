@@ -5,5 +5,42 @@
 
 Pulse Sequencer example code for ICLC 2017.
 
+** Background Listening
+
+https://youtu.be/tqb-0JY40vU?t=20m8s
+
+** Prerequisites
+
+- Cycling '74 [[https://cycling74.com/products/max][Max]] (7 or later).
+- [[https://www.ableton.com/en/live/][Ableton Suite 9]] or later. (Technically, the Pulse Sequencing machinery will work fine in standalone Max, if you can provide a sound source which responds to MIDI.)
+- Java 8. Download and install from [[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html][Oracle]].
+- The Max for Live devices: ~PulseSeq.amxd~ hosts the Pulse Sequencer, while ~python-sanity-check.amxd~ is a simple test device for making sure the Java and Python machinery is working.
+- A text editor which understands Python. We suggest [[https://atom.io/][Atom]].
+
 ** Installation
-** Examples
+
+- Suite 9
+- Max 7
+- Java
+- Atom
+
+- Java libraries: place in =~/Documents/Max 7/Packages/ps-support/java-classes/lib=.
+- All Pulse Sequencer scripts need to be placed in the same directory as a place-holder file (with extension ~.python.PLACE_HOLDER~).
+
+** Getting Started
+
+- Create a new Live Set, add the provided devices.
+- Test the sanity check. Can Python evaluate expressions? Can it load and run scripts?
+- Try to load a script into the Pulse Sequencer device. Set the place-holder first.
+
+** Topics
+
+- First principles. (ICLC paper.)
+- First pass: cycling round some fixed pitches.
+- Assembling: shortcut syntax.
+- Cycle controls: ~firstIf~, ~nextIf~, ~loopIf~.
+- Timing patterns - multiple cycles.
+- Indexing, indirect lookup, scales.
+- Randomisation, selection.
+- Controller output: Live Object Model.
+- Controller input: Atoms, automation.
