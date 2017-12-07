@@ -26,6 +26,7 @@ https://youtu.be/tqb-0JY40vU?t=20m8s
 
 - Java libraries: place in =~/Documents/Max 7/Packages/ps-support/java-classes/lib=.
 - All Pulse Sequencer scripts need to be placed in the same directory as a place-holder file (with extension ~.python.PLACE_HOLDER~).
+- Max needs to have the place-holder's directory in its search path.
 
 ** Getting Started
 
@@ -36,6 +37,7 @@ https://youtu.be/tqb-0JY40vU?t=20m8s
 ** Topics
 
 - First principles. (ICLC paper.)
+- File organisation: place-holders, header, footer. Extending Python search path.
 - First pass: cycling round some fixed pitches.
 - Assembling: shortcut syntax.
 - Cycle controls: ~firstIf~, ~nextIf~, ~loopIf~.
@@ -43,4 +45,5 @@ https://youtu.be/tqb-0JY40vU?t=20m8s
 - Indexing, indirect lookup, scales.
 - Randomisation, selection.
 - Controller output: Live Object Model.
-- Controller input: Atoms, automation.
+- Controller input: Atoms, and working with automation.
+- (Optional) Keyboard input.
